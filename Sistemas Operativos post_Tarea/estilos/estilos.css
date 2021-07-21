@@ -1,0 +1,60 @@
+*{
+    margin: 5px;
+    border-radius: 10px;
+}
+header{
+    background-color: rgb(206, 240, 240);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+aside{
+    grid-column: 1/2;
+    background-color: rgb(104, 104, 145);
+}
+section{
+    grid-column: 2/5;
+    background-color: rgb(155, 155, 189);
+}
+footer{
+    text-align: center;
+    background-color: rgb(15, 13, 13);
+    color: ivory;
+    padding: 10px;
+}
+.menu{
+    display: flex;
+}
+nav ul{
+    list-style: none;
+    padding: 5px;
+    color: rgb(247, 243, 243);
+    background: black;
+}
+.menu li{
+    width: 100%;
+    text-align: center;
+}
+.menu a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: saddlebrown;
+    height: 25px;
+    text-decoration: none;
+}
+.dropdown li{
+    display: none;
+}
+.menu li:hover .dropdown li{
+    display: block;
+}
+.menu a:hover{
+    background: blueviolet;
+    color: white;
+}
